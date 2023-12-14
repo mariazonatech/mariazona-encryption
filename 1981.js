@@ -1,45 +1,4 @@
-const logInBox = document.getElementById("loginCode");
-      document.addEventListener ("keydown", e => {
-        if (e.ctrlKey && e.key.toLowerCase() === "k" || e.key.toLowerCase() === "k" && e.metaKey) {
-          e.preventDefault();
-          logInBox.focus();
-        }
-      });
-      document.addEventListener('keydown', function(event) {
-        if (event.keyCode === 13) {
-          document.getElementById('loginBtn').click();
-        }
-      });
-      const clear = document.getElementById("clearBtn");
-      document.addEventListener ("keydown", e => {
-        if (e.ctrlKey && e.key.toLowerCase() === "x" || e.key.toLowerCase() === "x" && e.metaKey) {
-          e.preventDefault();
-          clear.click();
-        }
-      });
-      // const encrypt = document.getElementById("encryptBtn");
-      // document.addEventListener ("keydown", e => {
-      //   if (e.ctrlKey && e.key.toLowerCase() === "e" || e.key.toLowerCase() === "e" && e.metaKey) {
-      //     e.preventDefault();
-      //     encrypt.click();
-      //   }
-      // });
-      // const decrypt = document.getElementById("decryptBtn");
-      // document.addEventListener ("keydown", e => {
-      //   if (e.ctrlKey && e.key.toLowerCase() === "d" || e.key.toLowerCase() === "d" && e.metaKey) {
-      //     e.preventDefault();
-      //     decrypt.click();
-      //   }
-      // });
-      const textBox = document.getElementById("input");
-      document.addEventListener ("keydown", e => {
-        if (e.key.toLowerCase() === "/") {
-          e.preventDefault();
-          textBox.focus();
-        }
-      });
-
-      var isUnlocked = false;
+var isUnlocked = false;
       function login() {
         var enteredCode = document.getElementById("loginCode").value;
         if (enteredCode !== token) {
@@ -80,4 +39,4 @@ const logInBox = document.getElementById("loginCode");
         document.getElementById("input").value = "";
       }
 
-      var token ="johnyjohnyyespapa";
+      var token ="nidexingg159619";
